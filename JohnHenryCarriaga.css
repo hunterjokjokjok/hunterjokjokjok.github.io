@@ -1,0 +1,787 @@
+
+body{
+    background-image: url(bg3.jpeg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    overflow-x: hidden; 
+}
+    
+    
+/* 
+    CSS coded by John Henry Carriaga
+    Date: 2025-10-24
+*/
+
+
+
+
+.shape {
+    top: 0;           /* distance from the top */
+    left: 0; 
+    position: absolute;
+    width: 100%;
+    height: 560px;
+    background: rgba(255, 255, 255, 0.1); 
+    opacity: 1;
+}
+
+
+.menu_shape {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: rgba(0, 123, 255);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 50px;
+  z-index: 10;
+}
+
+.brand {
+  background-image: url("./logo.png"); /* relative path */
+  width: 180px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.menu a {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 50px;
+  font-size: 15px;
+}
+
+.search_shape {
+  position: absolute;
+  top: 40%;            /* vertical center */
+  left: 50%;           /* horizontal center */
+  transform: translate(-50%, -50%); /* shift back half width & height */
+  width: 50%;          /* adjust as needed */
+  height: 150px;
+  background: rgba(0, 0, 0, .7);
+  border-radius: 30px;
+}
+
+.search_text {
+  color: white;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 30px;
+ 
+}
+
+
+.dropdown {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 20px;
+  margin-top: 30px;
+  height: 30px;
+}
+
+
+.search_input {
+  font-family: 'Poppins', sans-serif;
+  margin-left: 10px;
+  margin-top: 30px;
+  width: 53%;
+  height: 25px;
+}
+
+
+
+
+.search_button {
+  background-color: orange;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 30px;
+  width: 20%;
+  height: 33px;
+}
+
+.options_shape {
+  position: absolute;
+  top: 45%;            /* vertical center */
+  left: 220px;           /* horizontal center */
+  transform: translate(-50%, -50%); /* shift back half width & height */
+  width: 390px;          /* adjust as needed */
+  height: 40px;
+  background: rgba(100, 100, 0, .7);
+}
+
+
+.favourites {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  text-decoration: none !important;
+  margin-left: 50px;
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.login {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 0px;
+  width: 10%;
+  height: 30px;
+}
+
+.property {
+  background-color: orange;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 0px;
+  width: 10%;
+  height: 30px;
+}
+
+.brand_name {
+  position: absolute;
+  top: 550px;         /* distance from top */
+  left: 0px;        /* distance from left edge */
+  width: 100%;
+  height: 750px;
+  background: rgba(20, 20, 20);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.marci_shape {
+  background-image: url("Marci.jpeg"); /* relative path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  position: absolute;
+  top: 48%;      /* move to middle vertically */
+  left: 50%;     /* move to middle horizontally */
+  transform: translate(-50%, -50%); /* perfectly center */
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.owner_name {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 200%;
+  margin-top: 50px;
+  width: 20%;
+  height: 30px;
+ 
+
+}
+
+.group {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  margin-top: 30px;
+  margin-left: 225px;
+  width: 30%;
+  height: 30px;
+}
+
+.realtor {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  margin-left: 290px;
+  margin-top: 0px;
+  width: 30%;
+  height: 30px;
+}
+
+.realtor2 {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  margin-left: 330px;
+  margin-top: 400px;
+  width: 40%;
+  height: 30px;
+}
+
+.phone {
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 100%;
+  margin-left: 350px;
+  margin-top: 0px;
+  width: 30%;
+  height: 30px;
+}
+
+
+.call {
+  background-color: orange;
+  border-radius: 30px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 150%;
+  margin-left: 10px;
+  margin-top: 20px;
+  width: 20%;
+  height: 50px;
+}
+
+
+
+.details_shape {
+  background-color: white;
+  position: absolute;
+  top: 120%;            /* keeps it far down */
+  left: 50%;            /* center horizontally */
+  width: 100%;          
+  height: 1000px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%); /* only move horizontally */
+}
+
+.get {
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;     /* 200% font size */
+}
+
+
+
+.image_box1 {
+  background-color: white;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  width: 80%;
+  height: 350px;
+  display: flex;               /* make it a flex container */
+  justify-content: space-between; /* space between two columns */
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+.image1_box {
+  background-image: url('image1.jpeg');
+  background-size: cover;      /* cover entire box */
+  background-position: center;
+  width: 50%;                  /* left column takes 50% */
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.image1_text {
+  background-color: white;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;                  /* right column takes 50% */
+  height: 100%;
+  
+  display: flex;               /* center content inside */
+  flex-direction: column;
+  justify-content: center;     /* vertical center */
+  align-items: center;         /* horizontal center */
+  text-align: center;          /* multiline text centered */
+}
+
+.title1 {
+  font-size: 1.5rem;
+  margin: 0 0 30px 0;
+}
+
+.content1 {
+  font-size: 1.1rem;
+  margin: 0;
+  width: 70%
+  
+}
+
+
+.image_box2 {
+  background-color: white;
+  position: absolute;
+  top: 98%;
+  left: 50%;
+  width: 80%;
+  height: 350px;
+  display: flex;               /* make it a flex container */
+  justify-content: space-between; /* space between two columns */
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+
+.image2_box {
+  background-image: url('image2.jpeg');
+  background-size: cover;      /* cover entire box */
+  background-position: center;
+  width: 50%;                  /* left column takes 50% */
+  height: 100%;
+  flex-shrink: 0;
+  order: 2;
+}
+
+.image2_text {
+  background-color: white;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;                  /* right column takes 50% */
+  height: 100%;
+  
+  display: flex;               /* center content inside */
+  flex-direction: column;
+  justify-content: center;     /* vertical center */
+  align-items: center;         /* horizontal center */
+  text-align: center;          /* multiline text centered */
+  order: 1;
+}
+
+.title2 {
+  font-size: 1.5rem;
+  margin: 0 0 30px 0;
+}
+
+.content2 {
+  font-size: 1.1rem;
+  margin: 0;
+  width: 70%
+}
+
+
+
+.image_box3 {
+  background-color: black;
+  position: absolute;
+  top: 136%;
+  left: 50%;
+  width: 80%;
+  height: 350px;
+  display: flex;               /* make it a flex container */
+  justify-content: space-between; /* space between two columns */
+  transform: translateX(-50%);
+  box-sizing: border-box;
+}
+
+
+.image3_box {
+  background-image: url('image3.jpeg');
+  background-size: cover;      /* cover entire box */
+  background-position: center;
+  width: 50%;                  /* left column takes 50% */
+  height: 100%;
+  flex-shrink: 0;
+  order: 1;
+}
+
+.image3_text {
+  background-color: white;
+  color: black;
+  font-family: 'Poppins', sans-serif;
+  width: 50%;                  /* right column takes 50% */
+  height: 100%;
+  
+  display: flex;               /* center content inside */
+  flex-direction: column;
+  justify-content: center;     /* vertical center */
+  align-items: center;         /* horizontal center */
+  text-align: center;          /* multiline text centered */
+  order: 2;
+}
+
+.title3 {
+  font-size: 1.5rem;
+  margin: 0 0 30px 0;
+}
+
+.content3 {
+  font-size: 1.1rem;
+  margin: 0;
+  width: 70%
+}
+
+
+.image_slideshow {
+  position: absolute;
+  top: 335%;
+  left: 0;
+  width: 99.9%;
+  height: 650px;
+  display: flex;                 /* horizontal layout for columns */
+  align-items: flex-start;       /* align columns to top */
+  gap: 20px;                     /* spacing between columns */
+  background: white;
+  border: 1px solid black; 
+}
+
+.test_column {
+  width: 65%;                    /* left column width */
+  display: flex;
+  flex-direction: column;        /* stack text and container vertically */
+  gap: 10px;                     /* space between text and container */
+}
+
+.featured_text {
+  margin-top: 3%;
+  margin-left: 2%;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+
+.test_container {
+  background-image: url('photo1.jpeg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 20px;
+  width: 85%;
+  height: 500px;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+.button_column {
+  width: 35%;                    /* right column width */
+  display: flex;
+  flex-direction: column;        /* stack project and button vertically */
+  gap: 10px;                     /* space between project and button */
+}
+
+.project {
+  margin-top: 21%;
+  margin-left: -20%;
+  background-color: white;
+  width: 110%;
+  height: 400px;
+}
+
+
+
+.button_group {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* space between buttons */
+  margin-top: -250px;
+}
+
+.test_button {
+  background-color: green;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.test_button:hover {
+  background-color: darkgreen;
+}
+
+
+.title_text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  margin-left: 40px;
+  margin-top: 20px;
+  
+}
+
+.location_text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: black;
+  margin-top: 5px; 
+  margin-left: 40px;
+}
+
+
+.line {
+  margin-top: 5px; 
+  margin-left: 40px;
+}
+
+
+.details_text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: black;
+  line-height: 1.5;
+  margin-top: 5px; 
+  margin-left: 40px;
+}
+
+
+
+
+
+.services_box {
+  position: absolute;
+  top: 414%;
+  left: 0%;
+  width: 100%;
+  height: 630px;
+  background: white;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.services_title {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+/* This makes the 3 boxes appear side by side */
+.services_columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.service_column1,
+.service_column2,
+.service_column3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  color: black;
+  flex: 1;
+  max-width: 350px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Image styling */
+.service_image {
+  width: 100%;              /* make it fill the column width */
+  height: 200px;            /* adjust as needed */
+  object-fit: cover;        /* keeps proportions, crops neatly */
+  border-radius: 10px 10px 0 0; /* round top corners */
+  margin-bottom: 15px;      /* space between image and title */
+}
+
+.feedback_box {
+  position: absolute;
+  top: 490%;
+  left: 0%;
+  width: 100%;
+  height: 580px;
+  background: rgb(138, 194, 138);
+  text-align: center;
+  padding-top: 40px;
+}
+
+
+.feedback_title {
+  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+}
+
+/* This makes the 3 boxes appear side by side */
+.feedback_columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.feedback_column1,
+.feedback_column2,
+.feedback_column3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  color: black;
+  flex: 1;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.feedback_image {
+  width: 200px;          /* make sure width and height are equal */
+  height: 200px;
+  object-fit: cover;      /* crops nicely */
+  object-position: center top; 
+  border-radius: 50%;     /* perfect circle */
+  margin-bottom: 15px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;     /* centers the image horizontally */
+}
+
+
+
+.contact_section {
+  position: absolute;
+  top: 565%;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;   /* ✅ includes padding inside width */
+  background: rgba(245, 245, 245, 1);
+  padding: 80px 10%;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;       /* ✅ prevents horizontal scroll if needed */
+}
+
+.contact_title {
+  font-size: 2rem;
+  color: rgba(90, 60, 60, 0.8);
+  letter-spacing: 2px;
+  margin-bottom: 50px;
+}
+
+.contact_container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact_form {
+  flex: 1;
+  min-width: 100px;
+  text-align: left;
+}
+
+.contact_form h2 {
+  font-size: 1.5rem;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.contact_form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #444;
+}
+
+.contact_form input,
+.contact_form textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  font-size: 1rem;
+  margin-bottom: 25px;
+  background: transparent;
+  outline: none;
+}
+
+.send_btn {
+  background: rgba(200, 200, 200, 0.5);
+  border: none;
+  padding: 12px 40px;
+  border-radius: 25px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.send_btn:hover {
+  background: rgba(200, 200, 200, 0.8);
+}
+
+.contact_info {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.whatsapp_btn {
+  display: inline-block;
+  background: #25d366;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 500;
+  margin-bottom: 25px;
+  transition: background 0.3s;
+}
+
+.whatsapp_btn:hover {
+  background: #1ebe5b;
+}
+
+.contact_info h3 {
+  margin-top: 10px;
+  color: #222;
+  font-size: 1.1rem;
+}
+
+.contact_info p {
+  margin: 8px 0;
+  color: #444;
+}
+
+.contact_info .hours {
+  color: brown;
+}
+
+
+.map_section {
+  position: absolute;
+  top: 645%;
+  left: 0;
+  width: 100vw;      /* full viewport width */
+  height: 400px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.map_section iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+
+
+
+
